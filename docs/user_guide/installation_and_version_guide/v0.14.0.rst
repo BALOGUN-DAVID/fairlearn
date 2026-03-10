@@ -12,3 +12,4 @@ Other improvements
 
 * Removed support for python 3.9 and added support for python 3.13: :pr:`1592` by :user:`Tamara Atanasoska <tamaraatanasoska>`.
 * Added support for scipy 1.16 :pr:`1596` by :user:`Tamara Atanasoska <tamaraatanasoska>`.
+* Fixed ``PerformanceWarning: DataFrame is highly fragmented`` in :class:`~fairlearn.reductions.GridSearch` and :class:`~fairlearn.reductions.ExponentiatedGradient` by replacing column-by-column DataFrame insertion with dictionary accumulation: :pr:`1631` by :user:`BALOGUN-DAVID <BALOGUN-DAVID>`. Fixes :issue:`1137`.
